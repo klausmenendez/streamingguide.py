@@ -64,14 +64,14 @@ class StreamingGuide:
                    self._LocationList.append(services.get_name())
         return self._LocationList
 
-Movie1=Movie("The Bourne Identity", "action-thriller", "Doug Liman","2002")
-print(Movie1.get_year())
-source1=StreamingService("Netflix")
-source1.add_movie(Movie1)
-print(source1.get_catalog())
-Guide1=StreamingGuide()
-Guide1.add_streaming_service(source1)
-print(Guide1.where_to_watch_movie("The Bourne Identity"))
+#Movie1=Movie("The Bourne Identity", "action-thriller", "Doug Liman","2002")
+#print(Movie1.get_year())
+#source1=StreamingService("Netflix")
+#source1.add_movie(Movie1)
+#print(source1.get_catalog())
+#Guide1=StreamingGuide()
+#Guide1.add_streaming_service(source1)
+#print(Guide1.where_to_watch_movie("The Bourne Identity"))
 
 
 
