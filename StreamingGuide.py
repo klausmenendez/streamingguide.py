@@ -57,7 +57,7 @@ class StreamingGuide:
         for service3 in self.StreamingServices:
             for titles in service3.get_catalog():
               if service3.get_catalog()[titles]==MovieTitle:
-                 self._LocationList.append(MovieTitle + " " + "(" + str(service3.get_catalog()["year"]))+")"
+                 self._LocationList.append(MovieTitle + " " + "(" + str(service3.get_catalog()["year"])+")")
         for services in self.StreamingServices:
             for titles in services.get_catalog():
                 if services.get_catalog()[titles]==MovieTitle:
