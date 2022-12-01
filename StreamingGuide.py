@@ -5,6 +5,9 @@
 class Movie:
 
  def __init__(self,title,genre,director,year):
+    '''
+    initializes variables
+    '''
     self._title=title
     self._genre=genre
     self._director=director
@@ -40,8 +43,8 @@ class StreamingService:
    '''
    creates a dictionary called catalog and initializes name variable
    '''
-      self._name=name
-      self._catalog={}
+   self._name=name
+   self._catalog={}
   def get_name(self):
    '''
    returns name of service
@@ -57,10 +60,10 @@ class StreamingService:
    '''
    adds movie object to dictionary under a service name
    '''
-      self._catalog["title"]=movie1.get_title()
-      self._catalog["genre"]=movie1.get_genre()
-      self._catalog["director"]=movie1.get_director()
-      self._catalog["year"]=movie1.get_year()
+   self._catalog["title"]=movie1.get_title()
+   self._catalog["genre"]=movie1.get_genre()
+   self._catalog["director"]=movie1.get_director()
+   self._catalog["year"]=movie1.get_year()
   def delete_movie(self, title1):
    '''
    deletes movie from catalog
@@ -71,16 +74,16 @@ class StreamingService:
 
 class StreamingGuide:
     def __init__(self):
-   '''
-   creates empty list to store streaming services
-   '''
-        self.StreamingServices=[]
+     '''
+     creates empty list to store streaming services
+     '''
+     self.StreamingServices=[]
 
     def add_streaming_service(self, service1):
      '''
      appends streaming service object and affiliated movies to list
      '''
-        self.StreamingServices.append(service1)
+     self.StreamingServices.append(service1)
     def delete_Streaming_Service(self, service2):
      '''
      deletes streaming service from list
