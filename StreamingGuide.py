@@ -96,15 +96,15 @@ class StreamingGuide:
      creates empty list and iterates over streaming service objects in the streaming services list to see if a particular movie title in the catalog dictionary falls under a particular service, and adds the movie title, year, and streaming service to the empty list at the beggining
      '''
      self._LocationList=[]
-       for service3 in self.StreamingServices:
-           for titles in service3.get_catalog():
-             if service3.get_catalog()[titles]==MovieTitle:
-                self._LocationList.append(MovieTitle + " " + "(" + str(service3.get_catalog()["year"])+")")
-       for services in self.StreamingServices:
-           for titles in services.get_catalog():
-               if services.get_catalog()[titles]==MovieTitle:
-                  self._LocationList.append(services.get_name())
-       return self._LocationList
+     for service3 in self.StreamingServices:
+         for titles in service3.get_catalog():
+           if service3.get_catalog()[titles]==MovieTitle:
+              self._LocationList.append(MovieTitle + " " + "(" + str(service3.get_catalog()["year"])+")")
+     for services in self.StreamingServices:
+         for titles in services.get_catalog():
+           if services.get_catalog()[titles]==MovieTitle:
+              self._LocationList.append(services.get_name())
+     return self._LocationList
 
 #Movie1=Movie("The Bourne Identity", "action-thriller", "Doug Liman","2002")
 #print(Movie1.get_year())
