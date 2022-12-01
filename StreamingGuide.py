@@ -14,25 +14,25 @@ class Movie:
   '''
   returns genre
   '''
-    return self._genre
+   return self._genre
 
  def get_title(self):
   '''
   returns title of movie
   '''
-     return self._title
+    return self._title
 
  def get_director(self):
   '''
   returns director
   '''
-     return self._director
+    return self._director
 
  def get_year(self):
   '''
   returns year
   '''
-     return self._year
+    return self._year
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 class StreamingService:
 
@@ -46,12 +46,12 @@ class StreamingService:
    '''
    returns name of service
    '''
-      return self._name
+     return self._name
   def get_catalog(self):
    '''
    returns catalog 
    '''
-      return self._catalog
+     return self._catalog
 
   def add_movie(self,movie1):
    '''
